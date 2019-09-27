@@ -10,39 +10,41 @@
     justify-content: center;
     align-items: center;
     height: inherit;
+    margin-top: 100px;
   }
 }
 header {
   .header__logo {
-    width: 65px;
-    height: 69px;
+    width: 43px;
+    height: 46px;
   }
   .header__scroll {
     display: block;
-    width: auto;
-    height: 34px;
+    width: 15px;
+    height: 25px;
     margin-bottom: 50px;
     cursor: pointer;
   }
   h1 {
     color: #ffffff;
     font-family: Lato;
-    font-size: 54px;
-    font-weight: 400;
+    font-size: 36px;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 8.62px; 
+    letter-spacing: 5.75px;
     text-align: center;
-    margin-top: 94px;
-    margin-bottom: 53px;
+    margin-top: 60px;
+    margin-bottom: 35px;
   }
   .header__text {
     width: 573px;
     color: #ffffff;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 29px;
+    font-family: Lato;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 19.33px;
     text-transform: uppercase;
-    letter-spacing: 0.9px;
+    letter-spacing: 0.6px;
     margin-bottom: 100px;
     padding: unset;
   }
