@@ -157,10 +157,12 @@ header .header__logo {
 }
 header .header__scroll {
   display: block;
-  width: 15px;
-  height: 25px;
   margin-bottom: 50px;
   cursor: pointer;
+}
+header .header__scroll img {
+  width: 15px;
+  height: 25px;
 }
 header h1 {
   color: #ffffff;

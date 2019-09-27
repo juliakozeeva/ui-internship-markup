@@ -20,10 +20,12 @@ header {
   }
   .header__scroll {
     display: block;
-    width: 15px;
-    height: 25px;
     margin-bottom: 50px;
     cursor: pointer;
+    img {
+      width: 15px;
+      height: 25px;
+    }
   }
   h1 {
     color: #ffffff;
