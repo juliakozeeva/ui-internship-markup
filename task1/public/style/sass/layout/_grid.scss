@@ -1,0 +1,22 @@
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //height: 50vh;
+  padding: 100px;
+}
+.block_bg-img {
+  padding: 70px;
+}
+.block_inner {
+  // border: 2px solid #3c3c3c;
+  position: relative;
+  border: solid #3c3c3c;
+  border-width: 0 2px 2px 2px;
+  max-width: 740px;
+  &_white {
+    border: solid #fff;
+    border-width: 0 2px 2px 2px;
+  }
+}

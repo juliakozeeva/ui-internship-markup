@@ -1,0 +1,55 @@
+.block_main {
+  background: #abb6ca url("/assets/bg-main.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: unset;
+  &_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+  }
+}
+header {
+  .header__logo {
+    width: 65px;
+    height: 69px;
+  }
+  .header__scroll {
+    display: block;
+    width: auto;
+    height: 34px;
+    margin-bottom: 50px;
+    cursor: pointer;
+  }
+  h1 {
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 54px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 8.62px; 
+    text-align: center;
+    margin-top: 94px;
+    margin-bottom: 53px;
+  }
+  .header__text {
+    width: 573px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 29px;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    margin-bottom: 100px;
+    padding: unset;
+  }
+}
+
+@media screen and (max-width: 1590px) {
+  .block_main {
+    background-position: right;
+  }
+}

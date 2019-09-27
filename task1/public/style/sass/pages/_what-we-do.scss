@@ -1,0 +1,12 @@
+.block_what-we-do {
+  &__item {
+    .block__img {
+      display: block;
+      margin: 0 auto;
+      padding: 50px 0;
+      &_first-child{
+        padding: 100px 0 50px;
+      }
+    }
+  }
+}
