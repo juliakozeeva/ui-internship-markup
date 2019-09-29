@@ -3,7 +3,7 @@
   background-size: cover;
   background-position: center;
   height: 100vh;
-  padding: unset;
+  padding: 0;
   &_inner {
     display: flex;
     flex-direction: column;
@@ -39,7 +39,7 @@ header {
     margin-bottom: 35px;
   }
   .header__text {
-    width: 573px;
+    //width: 573px;
     color: #ffffff;
     font-family: Lato;
     font-size: 10px;
