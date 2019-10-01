@@ -1,38 +1,21 @@
 html {
   scroll-behavior: smooth;
 }
-.block_main {
+.header {
   background: #abb6ca url("/assets/bg-main.png");
   background-size: cover;
   background-position: right;
   height: 100vh;
-  padding: 0;
-  &_inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: inherit;
-    margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__logo {
+    margin-top: 26vh;
+    width: 43px;
+    height: 46px;
   }
-}
-header {
-  .header__logo {
-    img {
-      width: 43px;
-      height: 46px;
-    }
-  }
-  .header__scroll {
-    display: block;
-    margin-bottom: 70px;
-    cursor: pointer;
-    img {
-      width: 15px;
-      height: 25px;
-    }
-  }
-  h1 {
+  &__title {
     color: #ffffff;
     font-family: Lato;
     font-size: 36px;
@@ -43,19 +26,28 @@ header {
     margin-top: 60px;
     margin-bottom: 35px;
     line-height: 1.2;
+    white-space: pre-line;
   }
-  .header__text {
-    //width: 573px;
+  &__text {
     color: #ffffff;
     font-family: Lato;
     font-size: 10px;
     font-weight: 400;
     line-height: 19.33px;
+    white-space: pre-line;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.6px;
     padding: unset;
-    &:last-child {
-      margin-bottom: 100px;
+  }
+  &__scroll-wrapper {
+    display: block;
+    margin-top: auto;
+    margin-bottom: 77px;
+    cursor: pointer;
+    .header__scroll {
+      width: 15px;
+      height: 25px;
     }
   }
 }
