@@ -1,7 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
 .block_main {
   background: #abb6ca url("/assets/bg-main.png");
   background-size: cover;
-  background-position: center;
+  background-position: right;
   height: 100vh;
   padding: 0;
   &_inner {
@@ -15,12 +18,14 @@
 }
 header {
   .header__logo {
-    width: 43px;
-    height: 46px;
+    img {
+      width: 43px;
+      height: 46px;
+    }
   }
   .header__scroll {
     display: block;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     cursor: pointer;
     img {
       width: 15px;
@@ -37,6 +42,7 @@ header {
     text-align: center;
     margin-top: 60px;
     margin-bottom: 35px;
+    line-height: 1.2;
   }
   .header__text {
     //width: 573px;
@@ -47,13 +53,9 @@ header {
     line-height: 19.33px;
     text-transform: uppercase;
     letter-spacing: 0.6px;
-    margin-bottom: 100px;
     padding: unset;
-  }
-}
-
-@media screen and (max-width: 1590px) {
-  .block_main {
-    background-position: right;
+    &:last-child {
+      margin-bottom: 100px;
+    }
   }
 }

@@ -32,14 +32,15 @@ footer {
       margin-top: 60px;
       .footer__logo {
         background-image: url("/assets/footer_logo.png");
-        width: 35px;
-        height: 37px;
+        background-size: contain;
+        width: 23px;
+        height: 25px;
         margin-right: 30px;
       }
         p {
           color: #3c3c3c;
           font-family: Lato;
-          font-size: 14px;
+          font-size: 9px;
           font-weight: 400;
         }
     }
@@ -47,9 +48,11 @@ footer {
 }
 
 @media screen and (max-width: 630px) {
-  .footer__button {
-    &_link {
-      padding: 23px 50px;
+  footer {
+    .block_footer {
+      .footer__button_link { 
+        padding: 23px 50px;
+      }
     }
   }
 }

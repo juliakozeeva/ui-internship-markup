@@ -48,11 +48,11 @@ table {
 .text {
   color: #3c3c3c;
   font-family: Lato;
-  font-size: 16px;
+  font-size: 11px;
   font-weight: 300;
-  line-height: 24px;
+  line-height: 17.26px;
   text-align: center;
-  padding: 50px 100px;
+  padding: 50px 110px;
 }
 
 .text_white {
@@ -62,12 +62,12 @@ table {
 .h2 {
   color: #3c3c3c;
   font-family: Lato;
-  font-size: 34px;
+  font-size: 23px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 8.95px;
+  letter-spacing: 5.97px;
   position: absolute;
-  top: -17px;
+  top: -12px;
   background-color: #fff;
   background-color: transparent;
   display: flex;
@@ -102,6 +102,10 @@ table {
   flex: 1;
 }
 
+.text_pre-line {
+  white-space: pre-line;
+}
+
 h3 {
   color: #3c3c3c;
   font-family: Lato;
@@ -112,6 +116,11 @@ h3 {
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .text {
+    padding: 50px 90px;
+  }
+}
 @media screen and (max-width: 630px) {
   .text {
     padding: 50px;
@@ -129,13 +138,13 @@ h3 {
   padding: 70px;
 }
 
-.block_inner {
+.block__inner {
   position: relative;
   border: solid #3c3c3c;
   border-width: 0 2px 2px 2px;
   max-width: 740px;
 }
-.block_inner_white {
+.block__inner_white {
   border: solid #fff;
   border-width: 0 2px 2px 2px;
 }
@@ -145,14 +154,18 @@ h3 {
     padding: 50px;
   }
 
-  .block_inner {
+  .block__inner {
     width: 100%;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 .block_main {
   background: #abb6ca url("/assets/bg-main.png");
   background-size: cover;
-  background-position: center;
+  background-position: right;
   height: 100vh;
   padding: 0;
 }
@@ -165,13 +178,13 @@ h3 {
   margin-top: 100px;
 }
 
-header .header__logo {
+header .header__logo img {
   width: 43px;
   height: 46px;
 }
 header .header__scroll {
   display: block;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   cursor: pointer;
 }
 header .header__scroll img {
@@ -188,6 +201,7 @@ header h1 {
   text-align: center;
   margin-top: 60px;
   margin-bottom: 35px;
+  line-height: 1.2;
 }
 header .header__text {
   color: #ffffff;
@@ -197,15 +211,12 @@ header .header__text {
   line-height: 19.33px;
   text-transform: uppercase;
   letter-spacing: 0.6px;
-  margin-bottom: 100px;
   padding: unset;
 }
-
-@media screen and (max-width: 1590px) {
-  .block_main {
-    background-position: right;
-  }
+header .header__text:last-child {
+  margin-bottom: 100px;
 }
+
 .block_services {
   background: #abb6ca url("/assets/bg-services.png");
   background-size: cover;
@@ -257,15 +268,15 @@ header .header__text {
 }
 .block_our-works .our-works__list__item img {
   width: 100%;
-  height: auto;
+  height: 158px;
 }
 .block_our-works .our-works__list__item .item_name {
   color: #ffffff;
   font-family: Lato;
-  font-size: 24px;
+  font-size: 23px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 8.95px;
+  letter-spacing: 5.97px;
   position: absolute;
   bottom: 40px;
   left: 40px;
@@ -325,19 +336,20 @@ footer .block_footer .footer__сopyright {
 }
 footer .block_footer .footer__сopyright .footer__logo {
   background-image: url("/assets/footer_logo.png");
-  width: 35px;
-  height: 37px;
+  background-size: contain;
+  width: 23px;
+  height: 25px;
   margin-right: 30px;
 }
 footer .block_footer .footer__сopyright p {
   color: #3c3c3c;
   font-family: Lato;
-  font-size: 14px;
+  font-size: 9px;
   font-weight: 400;
 }
 
 @media screen and (max-width: 630px) {
-  .footer__button_link {
+  footer .block_footer .footer__button_link {
     padding: 23px 50px;
   }
 }

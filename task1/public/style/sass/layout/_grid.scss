@@ -9,7 +9,7 @@
 .block_bg-img {
   padding: 70px;
 }
-.block_inner {
+.block__inner {
   // border: 2px solid #3c3c3c;
   position: relative;
   border: solid #3c3c3c;
@@ -25,7 +25,7 @@
   .block {
     padding: 50px;
   }
-  .block_inner {
+  .block__inner {
     width: 100%;
   }
 }
