@@ -86,15 +86,15 @@
     font-weight: 300;
     line-height: 17.26px;
     text-align: center;
-    padding: 25px 100px;
+    padding: 35px 100px;
     &_white {
       color: #fff;
     }
     &_pre-line {
       white-space: pre-line;
     }
-    &:last-of-type {
-      padding: 25px 100px 60px;
+    &_last-child {
+      padding: 35px 100px 60px;
     }
   }
   &__img {

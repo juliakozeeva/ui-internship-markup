@@ -134,7 +134,7 @@ table {
   font-weight: 300;
   line-height: 17.26px;
   text-align: center;
-  padding: 25px 100px;
+  padding: 35px 100px;
 }
 .container-content__text_white {
   color: #fff;
@@ -142,8 +142,8 @@ table {
 .container-content__text_pre-line {
   white-space: pre-line;
 }
-.container-content__text:last-of-type {
-  padding: 25px 100px 60px;
+.container-content__text_last-child {
+  padding: 35px 100px 60px;
 }
 .container-content__img {
   display: block;
