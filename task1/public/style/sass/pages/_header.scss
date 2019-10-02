@@ -5,7 +5,7 @@ html {
   background: #abb6ca url("/assets/bg-main.png");
   background-size: cover;
   background-position: right;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

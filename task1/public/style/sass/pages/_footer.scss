@@ -1,0 +1,20 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  &__logo {
+    background-image: url("/assets/footer_logo.png");
+    background-size: contain;
+    width: 23px;
+    height: 25px;
+    margin-right: 30px;
+  }
+  &__сopyright {
+    display: flex;
+    align-items: center;
+    color: #3c3c3c;
+    font-family: Lato;
+    font-size: 9px;
+    font-weight: 400;
+  }
+}

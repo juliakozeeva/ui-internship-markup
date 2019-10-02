@@ -52,21 +52,53 @@ table {
   align-items: center;
   padding: 100px;
 }
-.container:last-child {
-  padding: 100px 100px 50px;
+.container:last-of-type {
+  padding: 100px 100px 40px;
 }
 
 .container-content {
   position: relative;
-  max-width: 740px;
+  max-width: 600px;
 }
 .container-content_white {
   border: solid #fff;
   border-width: 0 2px 2px 2px;
 }
+.container-content_white::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 2px solid #fff;
+  width: 25%;
+}
+.container-content_white::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 2px solid #fff;
+  width: 25%;
+}
 .container-content_black {
   border: solid #3c3c3c;
   border-width: 0 2px 2px 2px;
+}
+.container-content_black::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 2px solid #3c3c3c;
+  width: 25%;
+}
+.container-content_black::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 2px solid #3c3c3c;
+  width: 25%;
 }
 .container-content__title {
   color: #3c3c3c;
@@ -81,34 +113,10 @@ table {
   background-color: transparent;
   display: flex;
   width: 100%;
-  align-items: center;
-}
-.container-content__title::before {
-  content: "";
-  border-top: 2px solid;
-  margin: 0 60px 0 -2px;
-  flex: 1;
-}
-.container-content__title::after {
-  content: "";
-  border-top: 2px solid;
-  margin: 0 -2px 0 60px;
-  flex: 1;
+  justify-content: center;
 }
 .container-content__title_white {
   color: #fff;
-}
-.container-content__title_white::before {
-  content: "";
-  border-top: 2px solid;
-  margin: 0 60px 0 -2px;
-  flex: 1;
-}
-.container-content__title_white::after {
-  content: "";
-  border-top: 2px solid;
-  margin: 0 -2px 0 60px;
-  flex: 1;
 }
 .container-content__title_small {
   color: #3c3c3c;
@@ -126,7 +134,7 @@ table {
   font-weight: 300;
   line-height: 17.26px;
   text-align: center;
-  padding: 50px 110px;
+  padding: 25px 100px;
 }
 .container-content__text_white {
   color: #fff;
@@ -134,13 +142,18 @@ table {
 .container-content__text_pre-line {
   white-space: pre-line;
 }
+.container-content__text:last-of-type {
+  padding: 25px 100px 60px;
+}
 .container-content__img {
   display: block;
+  width: 53px;
+  height: 55px;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 50px 0 27px;
 }
 .container-content__img_first-child {
-  padding: 100px 0 50px;
+  padding: 75px 0 27px;
 }
 .container-content__button {
   display: flex;
@@ -163,24 +176,6 @@ table {
 .container-content__button-link:hover {
   opacity: 0.8;
 }
-.container-content__сopyright {
-  display: flex;
-  align-items: center;
-  margin-top: 60px;
-}
-.container-content__сopyright__text {
-  color: #3c3c3c;
-  font-family: Lato;
-  font-size: 9px;
-  font-weight: 400;
-}
-.container-content__logo {
-  background-image: url("/assets/footer_logo.png");
-  background-size: contain;
-  width: 23px;
-  height: 25px;
-  margin-right: 30px;
-}
 
 @media screen and (max-width: 768px) {
   .container-content__text {
@@ -200,7 +195,7 @@ table {
     padding: 50px;
   }
 
-  .container-content__button_link {
+  .container-content__button-link {
     padding: 23px 50px;
   }
 }
@@ -212,7 +207,7 @@ html {
   background: #abb6ca url("/assets/bg-main.png");
   background-size: cover;
   background-position: right;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -316,7 +311,7 @@ html {
   height: 158px;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 870px) {
   .tiles-list {
     flex-direction: column;
     width: 100%;
@@ -336,6 +331,26 @@ html {
   .tiles-list__item:nth-of-type(3) {
     margin-left: 0;
   }
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.footer__logo {
+  background-image: url("/assets/footer_logo.png");
+  background-size: contain;
+  width: 23px;
+  height: 25px;
+  margin-right: 30px;
+}
+.footer__сopyright {
+  display: flex;
+  align-items: center;
+  color: #3c3c3c;
+  font-family: Lato;
+  font-size: 9px;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=main.css.map */
