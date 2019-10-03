@@ -1,0 +1,52 @@
+html {
+  scroll-behavior: smooth;
+}
+.header {
+  background-image: url("/assets/bg-main.png");
+  background-color:  #abb6ca;
+  background-size: cover;
+  background-position: right;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__logo {
+    margin-top: 26vh;
+    width: 43px;
+    height: 46px;
+  }
+  &__title {
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5.75px;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 35px;
+    line-height: 1.2;
+  }
+  &__text {
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .6px;
+    padding: unset;
+  }
+  &__scroll-wrapper {
+    display: block;
+    margin-top: auto;
+    margin-bottom: 77px;
+    cursor: pointer;
+    .header__scroll {
+      width: 15px;
+      height: 25px;
+    }
+  }
+}
