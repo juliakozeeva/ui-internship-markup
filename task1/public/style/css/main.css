@@ -201,7 +201,8 @@ html {
 }
 
 .header {
-  background: #abb6ca url("/assets/bg-main.png");
+  background-image: url("/assets/bg-main.png");
+  background-color: #abb6ca;
   background-size: cover;
   background-position: right;
   min-height: 100vh;

@@ -2,7 +2,8 @@ html {
   scroll-behavior: smooth;
 }
 .header {
-  background: #abb6ca url("/assets/bg-main.png");
+  background-image: url("/assets/bg-main.png");
+  background-color:  #abb6ca;
   background-size: cover;
   background-position: right;
   min-height: 100vh;
@@ -35,7 +36,7 @@ html {
     line-height: 1.6;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 0.6px;
+    letter-spacing: .6px;
     padding: unset;
   }
   &__scroll-wrapper {

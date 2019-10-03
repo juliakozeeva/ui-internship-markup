@@ -90,9 +90,6 @@
     &_white {
       color: #fff;
     }
-    // &_pre-line {
-    //   white-space: pre-line;
-    // }
     &_last-child {
       padding: 35px 66px 60px;
     }
@@ -124,7 +121,7 @@
       text-transform: uppercase;
       letter-spacing: 2.54px;
       &:hover {
-        opacity: 0.8;
+        opacity: .8;
       }
     }
   }
