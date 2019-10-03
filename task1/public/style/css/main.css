@@ -230,9 +230,9 @@ html {
 .header__text {
   color: #ffffff;
   font-family: Lato;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 19.33px;
+  line-height: 1.6;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.6px;
@@ -344,7 +344,7 @@ html {
   align-items: center;
   color: #3c3c3c;
   font-family: Lato;
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 400;
 }
 
