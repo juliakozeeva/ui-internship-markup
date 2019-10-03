@@ -82,19 +82,19 @@
   &__text {
     color: #3c3c3c;
     font-family: Lato;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 300;
-    line-height: 17.26px;
+    line-height: 1.5;
     text-align: center;
-    padding: 35px 100px;
+    padding: 35px 66px;
     &_white {
       color: #fff;
     }
-    &_pre-line {
-      white-space: pre-line;
-    }
+    // &_pre-line {
+    //   white-space: pre-line;
+    // }
     &_last-child {
-      padding: 35px 100px 60px;
+      padding: 35px 66px 60px;
     }
   }
   &__img {

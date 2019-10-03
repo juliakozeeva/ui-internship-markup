@@ -130,20 +130,17 @@ table {
 .container-content__text {
   color: #3c3c3c;
   font-family: Lato;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 300;
-  line-height: 17.26px;
+  line-height: 1.5;
   text-align: center;
-  padding: 35px 100px;
+  padding: 35px 66px;
 }
 .container-content__text_white {
   color: #fff;
 }
-.container-content__text_pre-line {
-  white-space: pre-line;
-}
 .container-content__text_last-child {
-  padding: 35px 100px 60px;
+  padding: 35px 66px 60px;
 }
 .container-content__img {
   display: block;
@@ -229,7 +226,6 @@ html {
   margin-top: 60px;
   margin-bottom: 35px;
   line-height: 1.2;
-  white-space: pre-line;
 }
 .header__text {
   color: #ffffff;
@@ -237,7 +233,6 @@ html {
   font-size: 10px;
   font-weight: 400;
   line-height: 19.33px;
-  white-space: pre-line;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.6px;
