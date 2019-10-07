@@ -2,35 +2,43 @@
   display: flex;
   padding: 40px 150px;
   background-color: #f0f0f0;
+
   &__links {
     display: flex;
     width: 100%;
     justify-content: space-between;
+
     &-text {
       color: #000000;
       font-family: "Playfair Display";
       font-size: 14px;
       font-weight: 400;
       line-height: 24px;
-      text-decoration: none; 
+      text-decoration: none;
+
       &:not(:last-of-type) {
         margin-right: 17px;
       }
     }
+
     &-icon {
       display: inline-block;
       text-decoration: none;
+
       &:not(:last-of-type) {
         margin-right: 17px;
       }
+
       .icon-facebook {
         width: 8px;
         height: 14px;
       }
+
       .icon-twitter {
         width: 18px;
         height: 13px;
       }
+
       .icon-instagram {
         width: 15px;
         height: 15px;
