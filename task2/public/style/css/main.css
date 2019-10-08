@@ -46,8 +46,17 @@ table {
   border-spacing: 0;
 }
 
-.main {
-  min-height: calc(100vh - 70px);
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  flex: 1 0 auto;
 }
 
 .container-fixed-width {
@@ -70,14 +79,14 @@ table {
 }
 .container-content:hover {
   cursor: pointer;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .container__img {
   width: 420px;
   height: 279px;
   margin-bottom: 32px;
 }
-.container__section-link {
+.container__section-topic {
   display: block;
   color: #b4ad9e;
   font-family: Ubuntu;
@@ -134,6 +143,7 @@ table {
 @media screen and (max-width: 1023px) {
   .container__img {
     width: 100%;
+    height: 225px;
   }
 }
 @media screen and (max-width: 760px) {
@@ -145,6 +155,10 @@ table {
   }
   .container-content {
     padding: 0;
+  }
+
+  .mail-container {
+    padding: 50px 30px !important;
   }
 }
 @media screen and (max-width: 500px) {
@@ -160,7 +174,12 @@ table {
     margin: 30px;
   }
 
+  .mail-container__title {
+    text-align: left;
+  }
+
   .footer__links {
+    padding: 0 !important;
     flex-direction: column;
   }
 }
@@ -232,7 +251,7 @@ table {
   border-bottom: 1px solid #000000;
   max-width: 400px;
   margin: 70px auto 40px auto;
-  padding: 14px 0;
+  padding: 7px 0;
 }
 .mail-container__input {
   background-color: transparent;
@@ -257,12 +276,15 @@ table {
   line-height: 24px;
 }
 .mail-container__submit {
-  background-image: url(/assets/send_icon.png);
+  background-image: url(/assets/send_icon.svg);
   background-color: transparent;
   border: none;
-  width: 32px;
+  width: 17px;
   height: 17px;
   cursor: pointer;
+}
+.mail-container__submit:hover {
+  filter: invert(10%) sepia(10%) saturate(23423%);
 }
 
 .img-container {
@@ -301,13 +323,17 @@ table {
 
 .footer {
   display: flex;
-  padding: 40px 150px;
+  padding: 40px 0;
   background-color: #f0f0f0;
+  flex-shrink: 0;
 }
 .footer__links {
   display: flex;
-  width: 100%;
+  padding: 0 70px;
   justify-content: space-between;
+}
+.footer__links-content {
+  display: flex;
 }
 .footer__links-text {
   color: #000000;
@@ -328,18 +354,26 @@ table {
   margin-right: 17px;
 }
 .footer__links-icon .icon-facebook {
-  width: 8px;
-  height: 14px;
+  width: 16px;
+  height: 24px;
 }
 .footer__links-icon .icon-twitter {
   width: 18px;
-  height: 13px;
+  height: 24px;
 }
 .footer__links-icon .icon-instagram {
   width: 15px;
-  height: 15px;
+  height: 24px;
+}
+.footer__links-icon:hover {
+  filter: invert(10%) sepia(10%) saturate(23423%);
 }
 
+@media screen and (max-width: 1023px) {
+  .footer__links {
+    padding: 0 30px;
+  }
+}
 .burger-menu {
   display: none;
   height: 20px;
@@ -414,6 +448,7 @@ table {
 }
 .burger-menu__checkbox:checked ~ .mobile-navbar {
   display: block;
+  height: 100vh;
   background-color: white;
   position: fixed;
   top: 0;

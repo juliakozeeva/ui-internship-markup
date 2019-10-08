@@ -1,12 +1,17 @@
 .footer {
   display: flex;
-  padding: 40px 150px;
+  padding: 40px 0;
   background-color: #f0f0f0;
+  flex-shrink: 0;
 
   &__links {
     display: flex;
-    width: 100%;
+    padding: 0 70px;
     justify-content: space-between;
+
+    &-content {
+      display: flex;
+    }
 
     &-text {
       color: #000000;
@@ -30,19 +35,31 @@
       }
 
       .icon-facebook {
-        width: 8px;
-        height: 14px;
+        width: 16px;
+        height: 24px;
       }
 
       .icon-twitter {
         width: 18px;
-        height: 13px;
+        height: 24px;
       }
 
       .icon-instagram {
         width: 15px;
-        height: 15px;
+        height: 24px;
       }
+      &:hover {
+        filter: invert(10%) sepia(10%) saturate(23423%);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .footer {
+
+    &__links {
+      padding: 0 30px;
     }
   }
 }

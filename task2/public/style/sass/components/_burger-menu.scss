@@ -88,6 +88,7 @@
 
   &__checkbox:checked~.mobile-navbar {
     display: block;
+    height: 100vh;
     background-color: white;
     position: fixed;
     top: 0;
