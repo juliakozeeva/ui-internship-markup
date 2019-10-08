@@ -1,3 +1,5 @@
+@import '../abstracts/colors';
+
 .burger-menu {
   display: none;
   height: 20px;
@@ -13,10 +15,8 @@
     height: inherit;
     width: inherit;
     z-index: 11;
+    cursor: pointer;
 
-    &:hover {
-      cursor: pointer;
-    }
   }
 
   &__line {
@@ -27,7 +27,7 @@
     margin-top: -1px;
     left: 0;
     display: block;
-    background-color: #020304;
+    background-color: $span-color;
     transition: .5s;
   }
 
@@ -71,7 +71,7 @@
 
       &__link {
         display: block;
-        color: #626262;
+        color: $text-color;
         font-family: "Playfair Display";
         font-size: 14px;
         font-weight: 400;

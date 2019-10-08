@@ -2,10 +2,10 @@
   padding: 50px;
   text-align: center;
   margin: 40px 0 100px 0;
-  background-color: #f0f0f0;
+  background-color: $background-color;
 
   &__title {
-    color: #333333;
+    color: $dark-grey;
     font-family: "Playfair Display";
     font-size: 30px;
     font-weight: 400;
@@ -15,7 +15,7 @@
   &__email {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid $black;
     max-width: 400px;
     margin: 70px auto 40px auto;
     padding: 7px 0;
@@ -27,7 +27,7 @@
     width: 100%;
 
     &::-webkit-input-placeholder {
-      color: #626262;
+      color: $text-color;
       font-family: "Playfair Display";
       font-size: 14px;
       font-weight: 400;
@@ -39,7 +39,7 @@
     }
 
     &[type="email"] {
-      color: #626262;
+      color: $text-color;
       font-family: "Playfair Display";
       font-size: 14px;
       font-weight: 400;

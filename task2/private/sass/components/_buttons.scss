@@ -1,5 +1,5 @@
 .button {
-  border: 1px solid #626262;
+  border: 1px solid $text-color;
   display: flex;
   width: 98px;
   padding: 21px 35px;
@@ -8,7 +8,7 @@
   text-decoration: none;
 
   &__content {
-    color: #626262;
+    color: $text-color;
     font-family: "Playfair Display";
     font-size: 20px;
     font-weight: 400;
@@ -16,12 +16,12 @@
   }
 
   &:hover {
-    background-color: darken(#626262, 1.5%);
-    color: lighten(#626262, 18%);
+    background-color: darken($text-color, 1.5%);
+    color: lighten($text-color, 18%);
     transition: all 250ms linear;
   }
 
   &:hover .button__content {
-    color: #fff;
+    color: $white;
   }
 }

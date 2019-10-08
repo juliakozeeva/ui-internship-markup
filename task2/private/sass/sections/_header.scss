@@ -4,7 +4,7 @@
   padding: 70px;
 
   &-logo {
-    color: #000000;
+    color: $black;
     font-family: Inconsolata;
     font-size: 30px;
     font-weight: 400;
@@ -26,7 +26,7 @@
     }
 
     &__link {
-      color: #626262;
+      color: $text-color;
       font-family: "Playfair Display";
       font-size: 14px;
       font-weight: 400;
@@ -40,7 +40,7 @@
     }
 
     &__comment {
-      color: #b4ad9e;
+      color: $link-color;
       font-family: Ubuntu;
       font-size: 9px;
       font-weight: 300;
