@@ -62,7 +62,7 @@
     display: none;
   }
 
-  &__checkbox:checked ~ .burger-menu_checked {
+  &__checkbox:checked ~ &_checked {
     display: block;
     height: 100vh;
     background-color: white;
