@@ -1,0 +1,16 @@
+.submit-input {
+  @include text-uppercase;
+  display: flex;
+  width: 190px;
+  height: 50px;
+  border-radius: 3px;
+  background-color: $coloron-primary-hight;
+  text-decoration: none;
+  letter-spacing: 3.2px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  &:hover {
+    background-color: darken($coloron-primary-hight, 5.5%);
+  }
+ }

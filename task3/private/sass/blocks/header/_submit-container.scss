@@ -1,0 +1,7 @@
+.submit-container {
+  padding: 39px;
+  z-index: 10;
+ &__text {
+  @include text-small;
+ }
+}

@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  flex-shrink: 0;
+  position: relative;
+  &::before {
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    border-bottom: 230px solid transparent;
+    opacity: 0.8;
+    border-right: 230px solid $coloron-primary-hight;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    .footer-content {
+      padding: 95px;
+    }
+  }
+
+}

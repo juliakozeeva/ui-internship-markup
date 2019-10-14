@@ -1,0 +1,53 @@
+$btn-size : 20px;
+$duration : 300ms;
+$easing : cubic-bezier(0, 0, .2, 1);
+$half-size: ($btn-size / 2);
+
+.play-button {
+  position: relative;
+  margin: 0 auto;
+  width: 59px;
+  height: 59px;
+  background-color: #8d8d8d;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 34%;
+    left: 38%;
+    width: 0;
+    height: 0px;
+    border-style: solid;
+    border-color: transparent $play-icon_color transparent $play-icon_color;
+    border-width: $half-size 0 $half-size $btn-size;
+    transition: transform $duration $easing,
+    border-top-width $duration $easing,
+    border-bottom-width $duration $easing;
+  }
+
+  &:hover {
+    background-color: $coloron-primary-accent;
+  }
+
+  &:focus {
+    outline: unset;
+  }
+}
+
+.play-button_stop {
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 35%;
+    left: 34%;
+    height: $btn-size;
+    transform: rotate(90deg);
+    transition: transform $duration $easing,
+      border-top-width $duration $easing,
+      border-bottom-width $duration $easing;
+    border-width: 0 0 0 $btn-size;
+  }
+}

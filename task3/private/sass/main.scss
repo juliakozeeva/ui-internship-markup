@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+html, .page {
+  height: 100%;
+}
+
+.wrapper {
+  flex: 1 0 auto;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700,800,900&display=swap');
+@import 'variables/mixins';
+@import 'variables/colors';
+
+@import 'blocks/header/header';
+@import 'blocks/header/play-container';
+@import 'blocks/header/play-button';
+@import 'blocks/header/submit-container.scss';
+@import 'blocks/header/submit-input.scss';
+
+@import 'blocks/section/section';
+@import 'blocks/section/section-content';
+@import 'blocks/section/flex-wrapper';
+
+@import 'blocks/section/components/icon';
+@import 'blocks/section/components/picture';
+@import 'blocks/section/components/video-container';
+@import 'blocks/section/components/video';
+
+@import 'blocks/section/form/form-desc';
+@import 'blocks/section/form/form';
+@import 'blocks/section/form/form-send';
+
+@import 'blocks/footer/footer';
+@import 'blocks/footer/footer-content';

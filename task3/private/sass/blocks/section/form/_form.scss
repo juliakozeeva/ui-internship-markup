@@ -1,0 +1,36 @@
+.form {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+
+  &_input {
+    width: 220px;
+    border-radius: 3px;
+    border: 1px solid $white;
+    background-color: transparent;
+    opacity: 0.5;
+  }
+  ::-webkit-input-placeholder {
+    @include text-uppercase;
+    
+  }
+  [type="text"],
+  [type="email"],
+  [type="password"] {
+    @include text-uppercase;
+    line-height: normal;
+    padding-left: 30px;
+    margin-right: 20px;
+    color: $color-primary;
+  }
+  &_submit {
+    margin: unset;
+    width: 250px;
+    box-shadow: 0 3px 3px rgba(14, 15, 15, 0.25);
+    border-radius: 3px;
+    border: 1px solid $coloron-primary-hight;
+    line-height: unset;
+    cursor: pointer;
+  }
+
+}

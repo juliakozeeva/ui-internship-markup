@@ -1,0 +1,164 @@
+.section-content {
+  @include fixed-with;
+
+  &_multiple-bg {
+    padding: 138px 0;
+    background: url(/assets/Pen_holder.png) 10% 0 no-repeat, url(/assets/Earphones.png) 90% -2% no-repeat, url(/assets/Coffee_Cup.png) 90% 100% no-repeat $color-primary;
+  }
+  
+  &__article {
+    width: 80%;
+    padding: 150px;
+
+    &_small {
+      padding: 0 20px;
+    }
+
+    &_right {
+      width: 50%;
+      padding: 0 50px;
+    }
+    &_center {
+      padding: 90px 150px;
+      width: 100%;
+    }
+  }
+
+  &__block-container {
+    display: flex;
+    padding: 45px 170px 90px;
+  }
+
+  &__sub-title {
+    @include sub-title;
+    margin: 0;
+
+    &_lower-case {
+      text-transform: capitalize;
+      letter-spacing: unset;
+      line-height: normal;
+      padding-bottom: 40px;
+    }
+  }
+
+  &__title {
+    padding-bottom: 45px;
+    margin: 0;
+    @include title;
+
+    &_ellipsis {
+      color: $coloron-primary-hight;
+    }
+
+    &_play-img {
+      color: $white;
+      position: relative;
+
+      &:after {
+        content: url(/assets/play.svg);
+        width: 42px;
+        height: 47px;
+        position: absolute;
+        top: -7px;
+        left: -3px;
+        z-index: -1;
+      }
+    }
+
+    &_small {
+      padding-bottom: 19px;
+      font-size: 22px;
+      line-height: normal;
+      letter-spacing: 0.88px;
+    }
+
+    &_light {
+      color: $white;
+      padding-bottom: 12px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    @include text;
+
+    &_light-italic {
+      color: $white;
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    &_paragraph {
+      padding-top: 40px;
+    }
+
+    &_light {
+      color: $color-primary;
+    }
+
+    &_link {
+      display: block;
+      line-height: 32px;
+      text-decoration: none;
+      cursor: pointer;
+
+      &:hover {
+        color: $coloron-primary-hight;
+      }
+    }
+  }
+
+  &__icon {
+    width: 65px;
+    height: 65px;
+    margin-bottom: 30px;
+  }
+
+  &__avatar {
+    width: 76px;
+    height: 76px;
+    background-color: $color-bg-border;
+    margin: 0 auto 26px;
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 170px 90px;
+
+    &_small {
+      padding: 19px 48px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .section-content {
+    &__article {
+      padding: 80px 150px 80px 80px;
+
+      &_small {
+        padding: 0 20px;
+      }
+
+      &_right {
+        width: 50%;
+        padding: 0 60px;
+      }
+      &_center {
+        padding: 90px;
+      }
+    }
+
+    &__block-container {
+      padding: 45px 90px 90px;
+    }
+
+    &__icons {
+      padding: 0 90px 90px;
+      &_small {
+        padding: 19px 48px;
+    }
+    }
+  }
+}

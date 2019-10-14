@@ -1,0 +1,15 @@
+.icon {
+  width: 95px;
+  height: 65px;
+  filter: invert(100%) sepia(0%) saturate(0%);
+
+  &_small {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+    &:hover {
+      filter: invert(100%) sepia(100%) saturate(100000%);
+    }
+  }
+}

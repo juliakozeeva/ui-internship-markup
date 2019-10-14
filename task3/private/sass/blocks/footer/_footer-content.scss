@@ -1,0 +1,10 @@
+.footer-content {
+  @include fixed-with;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 95px 150px;
+  &__column {
+    max-width: 231px;
+  }
+}
