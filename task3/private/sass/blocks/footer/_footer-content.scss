@@ -1,9 +1,10 @@
 .footer-content {
   @include fixed-with;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
-  z-index: 1;
-  padding: 95px 150px;
+  padding: 95px 60px;
+
   &__column {
     max-width: 231px;
   }

@@ -1,0 +1,56 @@
+.form-subscribe {
+  padding-bottom: unset;
+
+  &_input {
+    @include text-uppercase;
+    margin-right: 0;
+    border-radius: 3px;
+    border: 1px solid #bdc1c3;
+    width: 100%;
+    padding-left: 29px;
+    box-sizing: border-box;
+    background-color: $form-decoration-color_light;
+    outline: 0;
+    color: $form-text-color;
+    line-height: normal;
+  }
+
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: $form-text-color;
+  }
+
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: $form-text-color;
+  }
+
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    color: $form-text-color;
+  }
+
+  :-moz-placeholder {
+    /* Firefox 18- */
+    color: $form-text-color;
+  }
+
+  &_submit {
+    position: relative;
+    margin: 0 0 0 -3px;
+    box-shadow: 0 3px 3px rgba(14, 15, 15, 0.25);
+    border-radius: 3px;
+    border: 1px solid $coloron-primary-hight;
+    width: 78px;
+    background-image: url(/assets/arrow-send.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    line-height: unset;
+
+    &-disabled {
+      cursor: not-allowed;
+      opacity: .7;
+    }
+  }
+}

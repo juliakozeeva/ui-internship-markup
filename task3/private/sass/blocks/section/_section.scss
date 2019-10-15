@@ -1,5 +1,4 @@
 .section {
-  background-color: $white;
 
   &_full-width {
     display: flex;
@@ -10,19 +9,15 @@
 
   &_triangle-content {
     position: relative;
-    background: -webkit-linear-gradient(0deg, $white 70%, #dedede 30%);
-    overflow: hidden;
+    display: flex;
 
     &:after {
-      content: "";
+      content: '';
       position: absolute;
-      width: 0;
-      height: 0;
-      bottom: 0;
       right: 0;
-      opacity: 0.8;
-      border-top: 524px solid transparent;
-      border-right: 299px solid $coloron-primary-hight;
+      width: 36%;
+      height: 100%;
+      background-image: -webkit-linear-gradient(-45deg, #ededed 50%, $coloron-primary-hight_opacity 50%);
     }
 
     &_left {
@@ -31,22 +26,31 @@
   }
 
   &_blue {
+    padding: 90px 0;
     background-color: $coloron-primary-accent;
-    padding: 90px 150px;
   }
 
 
   &_dark {
-    display: flex;
     flex-direction: column;
-    background-image: url(/assets/dark-bg.png);
     text-align: center;
-    padding-top: 60px;
+    background-image: url(/assets/dark-bg.png);
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1366px) {
+  .section {
+
+    &_triangle-content {
+      &:after {
+        background-image: -webkit-linear-gradient(-45deg, #ededed 63%, $coloron-primary-hight 50%);
+      }
+    }
+  }
+}
+
+@media (max-width: 1130px) {
   .section_blue {
-    padding: 90px;
+    padding: 60px;
   }
 }

@@ -3,12 +3,12 @@
 
   &_multiple-bg {
     padding: 138px 0;
-    background: url(/assets/Pen_holder.png) 10% 0 no-repeat, url(/assets/Earphones.png) 90% -2% no-repeat, url(/assets/Coffee_Cup.png) 90% 100% no-repeat $color-primary;
+    background: url(/assets/Pen_holder.png) 0 0 no-repeat, url(/assets/Earphones.png) 100% -2% no-repeat, url(/assets/Coffee_Cup.png) 100% 100% no-repeat $color-primary;
   }
-  
+
   &__article {
     width: 80%;
-    padding: 150px;
+    padding: 150px 250px 150px 80px;
 
     &_small {
       padding: 0 20px;
@@ -18,15 +18,16 @@
       width: 50%;
       padding: 0 50px;
     }
+
     &_center {
-      padding: 90px 150px;
       width: 100%;
+      padding: 90px 250px;
     }
   }
 
   &__block-container {
     display: flex;
-    padding: 45px 170px 90px;
+    padding-bottom: 90px;
   }
 
   &__sub-title {
@@ -34,34 +35,34 @@
     margin: 0;
 
     &_lower-case {
+      padding-bottom: 40px;
       text-transform: capitalize;
       letter-spacing: unset;
       line-height: normal;
-      padding-bottom: 40px;
     }
   }
 
   &__title {
-    padding-bottom: 45px;
-    margin: 0;
     @include title;
+    margin: 0;
+    padding-bottom: 45px;
 
     &_ellipsis {
       color: $coloron-primary-hight;
     }
 
     &_play-img {
-      color: $white;
       position: relative;
+      color: $white;
 
       &:after {
         content: url(/assets/play.svg);
-        width: 42px;
-        height: 47px;
         position: absolute;
+        z-index: -1;
         top: -7px;
         left: -3px;
-        z-index: -1;
+        width: 42px;
+        height: 47px;
       }
     }
 
@@ -69,18 +70,18 @@
       padding-bottom: 19px;
       font-size: 22px;
       line-height: normal;
-      letter-spacing: 0.88px;
+      letter-spacing: .88px;
     }
 
     &_light {
-      color: $white;
       padding-bottom: 12px;
+      color: $white;
     }
   }
 
   &__text {
-    margin: 0;
     @include text;
+    margin: 0;
 
     &_light-italic {
       color: $white;
@@ -94,13 +95,14 @@
 
     &_light {
       color: $color-primary;
+      font-weight: 400;
     }
 
     &_link {
       display: block;
+      cursor: pointer;
       line-height: 32px;
       text-decoration: none;
-      cursor: pointer;
 
       &:hover {
         color: $coloron-primary-hight;
@@ -108,23 +110,27 @@
     }
   }
 
+  &__link-light {
+    color: $color-primary;
+  }
+
   &__icon {
+    margin-bottom: 30px;
     width: 65px;
     height: 65px;
-    margin-bottom: 30px;
   }
 
   &__avatar {
+    margin: 0 auto 26px;
     width: 76px;
     height: 76px;
-    background-color: $color-bg-border;
-    margin: 0 auto 26px;
+    background-color: $backround-avatar;
   }
 
   &__icons {
     display: flex;
     justify-content: space-between;
-    padding: 0 170px 90px;
+    padding: 0 90px;
 
     &_small {
       padding: 19px 48px;
@@ -135,7 +141,7 @@
 @media (max-width: 1024px) {
   .section-content {
     &__article {
-      padding: 80px 150px 80px 80px;
+      padding: 80px 180px 80px 80px;
 
       &_small {
         padding: 0 20px;
@@ -145,20 +151,22 @@
         width: 50%;
         padding: 0 60px;
       }
+
       &_center {
-        padding: 90px;
+        padding: 60px 150px;
       }
     }
 
     &__block-container {
-      padding: 45px 90px 90px;
+      padding: 45px 60px 90px;
     }
 
     &__icons {
       padding: 0 90px 90px;
+
       &_small {
         padding: 19px 48px;
-    }
+      }
     }
   }
 }

@@ -1,36 +1,71 @@
 .form {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   padding-bottom: 50px;
+  margin: 0 auto;
+  max-width: 1140px;
 
   &_input {
-    width: 220px;
-    border-radius: 3px;
-    border: 1px solid $white;
-    background-color: transparent;
-    opacity: 0.5;
-  }
-  ::-webkit-input-placeholder {
     @include text-uppercase;
-    
-  }
-  [type="text"],
-  [type="email"],
-  [type="password"] {
-    @include text-uppercase;
-    line-height: normal;
-    padding-left: 30px;
     margin-right: 20px;
+    padding: 0 20px;
+    width: 263px;
+    height: 49px;
+    border-radius: 3px;
+    border: 1px solid $form-border-color_darken;
+    background-color: $form-decoration-color_darken;
+    outline: 0;
+    line-height: unset;
+  }
+
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
     color: $color-primary;
   }
+
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: $color-primary;
+  }
+
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    color: $color-primary;
+  }
+
+  :-moz-placeholder {
+    /* Firefox 18- */
+    color: $color-primary;
+  }
+
   &_submit {
     margin: unset;
-    width: 250px;
+    width: 258px;
     box-shadow: 0 3px 3px rgba(14, 15, 15, 0.25);
     border-radius: 3px;
     border: 1px solid $coloron-primary-hight;
-    line-height: unset;
     cursor: pointer;
-  }
+    line-height: unset;
 
+    &-disabled {
+      cursor: not-allowed;
+      opacity: .7;
+    }
+  }
+}
+
+@media (max-width: 1220px) {
+  .form {
+    max-width: 1024px;
+
+    &_input {
+      width: 223px;
+    }
+
+    &_submit {
+      width: 223px;
+      border-radius: 3px;
+    }
+  }
 }

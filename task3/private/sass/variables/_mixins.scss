@@ -1,27 +1,29 @@
 @mixin fixed-with {
+  margin: 0 auto;
   max-width: 1200px;
   width: 100%;
-  margin: 0 auto;
 }
 
 @mixin text {
-  opacity: 0.66;
+  opacity: .66;
   color: $coloron-primary-low;
   font-family: Exo;
   font-size: 16px;
   font-weight: 500;
   line-height: 26px;
-  letter-spacing: 0.64px;
+  letter-spacing: .64px;
 }
+
 @mixin text-small {
-  opacity: 0.6;
+  opacity: .6;
   color: $coloron-primary-low;
   font-family: Exo;
   font-size: 14px;
   font-weight: 400;
   line-height: 75px;
-  letter-spacing: 0.56px;
+  letter-spacing: .56px;
 }
+
 @mixin text-uppercase {
   color: $white;
   font-family: Exo;
@@ -29,7 +31,7 @@
   font-weight: 400;
   line-height: 75px;
   text-transform: uppercase;
-  letter-spacing: 0.64px;
+  letter-spacing: .64px;
 }
 
 @mixin title {
@@ -40,6 +42,7 @@
   line-height: 50px;
   letter-spacing: 1.6px;
 }
+
 @mixin sub-title {
   color: $coloron-primary-hight;
   font-family: Exo;

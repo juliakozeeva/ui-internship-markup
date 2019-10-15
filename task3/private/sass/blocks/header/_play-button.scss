@@ -6,10 +6,11 @@ $half-size: ($btn-size / 2);
 .play-button {
   position: relative;
   margin: 0 auto;
+  border-radius: 50%;
+  border: none;
   width: 59px;
   height: 59px;
-  background-color: #8d8d8d;
-  border-radius: 50%;
+  background-color: $icon-background;
   cursor: pointer;
 
   &:after {
@@ -17,14 +18,14 @@ $half-size: ($btn-size / 2);
     position: absolute;
     top: 34%;
     left: 38%;
-    width: 0;
-    height: 0px;
+    transition: transform $duration $easing,
+      border-top-width $duration $easing,
+      border-bottom-width $duration $easing;
     border-style: solid;
     border-color: transparent $play-icon_color transparent $play-icon_color;
     border-width: $half-size 0 $half-size $btn-size;
-    transition: transform $duration $easing,
-    border-top-width $duration $easing,
-    border-bottom-width $duration $easing;
+    width: 0;
+    height: 0px;
   }
 
   &:hover {
@@ -43,11 +44,11 @@ $half-size: ($btn-size / 2);
     position: absolute;
     top: 35%;
     left: 34%;
-    height: $btn-size;
     transform: rotate(90deg);
     transition: transform $duration $easing,
       border-top-width $duration $easing,
       border-bottom-width $duration $easing;
+    height: $btn-size;
     border-width: 0 0 0 $btn-size;
   }
 }

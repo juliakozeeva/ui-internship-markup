@@ -1,13 +1,18 @@
-$color-primary: #f6f5f3;
-$coloron-primary-hight: #ff6d6d;
-$coloron-primary-hight_opacity: #ff8a8a;
-$coloron-primary-low: #282828;
-
-$color-bg-border: #4e4e5e;
-
 $black: #000000;
 $white: #ffffff;
-
+$color-primary: #f6f5f3;
+$coloron-primary-hight: #ff6d6d;
+$coloron-primary-hight_opacity: lighten($coloron-primary-hight, 5.69);
+$coloron-primary-low: #282828;
 $coloron-primary-accent: #323969;
 
+$backround-avatar: #4e4e5e;
+
 $play-icon_color: #f4f5f7;
+$icon-background: #8d8d8d;
+
+
+$form-decoration-color_light: #f6f6f6;
+$form-decoration-color_darken: #454d74;
+$form-border-color_darken: #9a9ab8;
+$form-text-color: #bdc1c3;
