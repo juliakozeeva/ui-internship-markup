@@ -1,22 +1,19 @@
-const form = document.getElementsByClassName("form")[0];
-const submit = document.getElementsByClassName("form_submit")[0];
-
-form.addEventListener('keyup', function (event) {
-  if ( form.checkValidity() ) {
-    submit.classList.remove( 'form_submit-disabled' );
-    submit.removeAttribute("disabled");
-  } 
-});
-
-
-const formSubscribeMail = document.getElementsByClassName("form-subscribe_input")[0];
-const submitSubscribe = document.getElementsByClassName("form-subscribe_submit")[0];
-
-formSubscribeMail.addEventListener('keyup', function (event) {
-  if ( formSubscribeMail.checkValidity() ) {
-    submitSubscribe.classList.remove( 'form-subscribe_submit-disabled' );
-    submitSubscribe.removeAttribute("disabled");
-  } 
-});
-
+document.addEventListener("DOMContentLoaded", () => {
+  const formList = [
+    document.querySelector('.form'),
+    document.querySelector('.form-subscribe'),
+  ];
+  const disabledFormSend = 'form_submit-disabled';
+  for (const form of formList) {
+    if (form) {
+      form.oninput = () => {
+        let submitButton = form.querySelector('button');
+        if (form.checkValidity()) {
+          submitButton.classList.remove(disabledFormSend);
+          submitButton.removeAttribute("disabled");
+        } 
+      };
+    }
+  }
+ });
 

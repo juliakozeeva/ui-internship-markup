@@ -12,6 +12,10 @@
   line-height: 0;
   letter-spacing: 3.2px;
 
+  &_shadow {
+    box-shadow: 0 3px 3px rgba(14, 15, 15, 0.25);
+  }
+
   &:hover {
     background-color: darken($coloron-primary-hight, 5.5%);
   }
