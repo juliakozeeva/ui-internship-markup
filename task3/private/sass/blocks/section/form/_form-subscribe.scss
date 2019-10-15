@@ -3,7 +3,6 @@
 
   &_input {
     @include text-uppercase;
-    margin-right: 0;
     border-radius: 3px;
     border: 1px solid #bdc1c3;
     width: 100%;
@@ -37,7 +36,7 @@
 
   &_submit {
     position: relative;
-    margin: 0 0 0 -3px;
+    left: -2px;
     box-shadow: 0 3px 3px rgba(14, 15, 15, 0.25);
     border-radius: 3px;
     border: 1px solid $coloron-primary-hight;
@@ -49,6 +48,7 @@
     line-height: unset;
 
     &-disabled {
+      box-shadow: unset;
       cursor: not-allowed;
       opacity: .7;
     }

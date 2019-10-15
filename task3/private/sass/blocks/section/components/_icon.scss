@@ -12,4 +12,24 @@
       filter: invert(100%) sepia(100%) saturate(100000%);
     }
   }
+
+  &_dribbble {
+    background-image: url(/assets/dribbble.svg);
+  }
+
+  &_facebook {
+    width: 11px;
+    background-image: url(/assets/facebook.svg);
+  }
+
+  &_googleplus {
+    height: 17px;
+    background-image: url(/assets/googleplus.svg);
+  }
+
+  &_twitter {
+    width: 19px;
+    height: 17px;
+    background-image: url(/assets/twitter.svg);
+  }
 }

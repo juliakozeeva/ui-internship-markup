@@ -1,11 +1,8 @@
 $btn-size : 20px;
-$duration : 300ms;
-$easing : cubic-bezier(0, 0, .2, 1);
 $half-size: ($btn-size / 2);
 
 .play-button {
   position: relative;
-  margin: 0 auto;
   border-radius: 50%;
   border: none;
   width: 59px;
@@ -18,9 +15,7 @@ $half-size: ($btn-size / 2);
     position: absolute;
     top: 34%;
     left: 38%;
-    transition: transform $duration $easing,
-      border-top-width $duration $easing,
-      border-bottom-width $duration $easing;
+    transition: 100ms all ease;
     border-style: solid;
     border-color: transparent $play-icon_color transparent $play-icon_color;
     border-width: $half-size 0 $half-size $btn-size;
@@ -42,12 +37,9 @@ $half-size: ($btn-size / 2);
   &:after {
     content: '';
     position: absolute;
-    top: 35%;
+    top: 34%;
     left: 34%;
-    transform: rotate(90deg);
-    transition: transform $duration $easing,
-      border-top-width $duration $easing,
-      border-bottom-width $duration $easing;
+    transition: 100ms all ease;
     height: $btn-size;
     border-width: 0 0 0 $btn-size;
   }

@@ -1,5 +1,8 @@
 .submit-container {
   z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 39px;
 
   &__text {
