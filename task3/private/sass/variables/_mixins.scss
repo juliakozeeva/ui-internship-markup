@@ -1,0 +1,63 @@
+@mixin fixed-with {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+@mixin text {
+  opacity: .66;
+  color: $coloron-primary-low;
+  font-family: Exo;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: .64px;
+}
+
+@mixin text-small {
+  opacity: .6;
+  color: $coloron-primary-low;
+  font-family: Exo;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 75px;
+  letter-spacing: .56px;
+}
+
+@mixin text-uppercase {
+  color: $white;
+  font-family: Exo;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 75px;
+  text-transform: uppercase;
+  letter-spacing: .64px;
+}
+
+@mixin title {
+  color: $coloron-primary-low;
+  font-family: Exo;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: 1.6px;
+}
+
+@mixin sub-title {
+  color: $coloron-primary-hight;
+  font-family: Exo;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 50px;
+  text-transform: uppercase;
+  letter-spacing: 3.2px;
+}
+
+@mixin title-large {
+  color: $coloron-primary-low;
+  font-family: "Exo";
+  font-size: 60px;
+  font-weight: 100;
+  line-height: 75px;
+  letter-spacing: 2.4px;
+}

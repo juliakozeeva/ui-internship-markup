@@ -1,0 +1,171 @@
+.section-content {
+  @include fixed-with;
+
+  &_multiple-bg {
+    padding: 138px 0;
+    background: url(/assets/Pen_holder.png) 0 0 no-repeat, url(/assets/Earphones.png) 100% -2% no-repeat, url(/assets/Coffee_Cup.png) 100% 100% no-repeat $color-primary;
+  }
+
+  &__article {
+    padding: 150px 0 150px 80px;
+    max-width: 571px;
+
+    &_small {
+      padding: 0 20px;
+    }
+
+    &_right {
+      padding: 0 50px;
+    }
+
+    &_center {
+      max-width: unset;
+      padding: 90px 250px;
+    }
+  }
+
+  &__block-container {
+    display: flex;
+    padding-bottom: 90px;
+  }
+
+  &__sub-title {
+    @include sub-title;
+    margin: 0;
+
+    &_lower-case {
+      padding-bottom: 40px;
+      text-transform: capitalize;
+      letter-spacing: unset;
+      line-height: normal;
+    }
+  }
+
+  &__title {
+    @include title;
+    margin: 0;
+    padding-bottom: 45px;
+
+    &_ellipsis {
+      color: $coloron-primary-hight;
+    }
+
+    &_play-img {
+      position: relative;
+      color: $white;
+
+      &:after {
+        content: url(/assets/play.svg);
+        position: absolute;
+        z-index: -1;
+        top: -7px;
+        left: -3px;
+        width: 42px;
+        height: 47px;
+      }
+    }
+
+    &_small {
+      padding-bottom: 19px;
+      font-size: 22px;
+      line-height: normal;
+      letter-spacing: .88px;
+    }
+
+    &_light {
+      padding-bottom: 12px;
+      color: $white;
+    }
+  }
+
+  &__text {
+    @include text;
+    margin: 0;
+
+    &_light-italic {
+      color: $white;
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    &_paragraph {
+      padding-top: 40px;
+    }
+
+    &_light {
+      color: $color-primary;
+      font-weight: 400;
+    }
+
+    &_link {
+      display: block;
+      cursor: pointer;
+      line-height: 32px;
+      text-decoration: none;
+
+      &:hover {
+        color: $coloron-primary-hight;
+      }
+    }
+  }
+
+  &__link-light {
+    color: $color-primary;
+  }
+
+  &__icon {
+    margin-bottom: 30px;
+    width: 65px;
+    height: 65px;
+  }
+
+  &__avatar {
+    margin: 0 auto 26px;
+    width: 76px;
+    height: 76px;
+    background-color: $backround-avatar;
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 90px;
+
+    &_small {
+      align-items: center;
+      padding: 19px 48px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .section-content {
+    &__article {
+      padding: 80px 0 80px 80px;
+
+      &_small {
+        padding: 0 20px;
+      }
+
+      &_right {
+        padding: 0 30px;
+      }
+
+      &_center {
+        padding: 60px 150px;
+      }
+    }
+
+    &__block-container {
+      padding: 45px 60px 90px;
+    }
+
+    &__icons {
+      padding: 0 90px 90px;
+
+      &_small {
+        padding: 19px 48px;
+      }
+    }
+  }
+}

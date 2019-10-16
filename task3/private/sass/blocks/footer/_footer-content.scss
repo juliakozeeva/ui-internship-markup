@@ -1,0 +1,15 @@
+.footer-content {
+  @include fixed-with;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 95px 150px 60px 60px;
+
+  &__column {
+    max-width: 231px;
+
+    &_indent-thin {
+      margin-left: -55px;
+    }
+  }
+}

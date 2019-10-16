@@ -1,0 +1,19 @@
+.header {
+  min-height: 100vh;
+
+  .header-content {
+    @include fixed-with;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    min-height: inherit;
+  }
+
+  &__title {
+    @include title-large;
+    z-index: 10;
+    margin: 0 auto;
+    max-width: 738px;
+  }
+}
