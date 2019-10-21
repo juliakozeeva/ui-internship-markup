@@ -1,0 +1,36 @@
+.button {
+  padding: 10px 35px;
+  border: 2px solid $white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  @include fonts($white, $OpenSansSemibold, 15px, 400);
+
+  &_transparent {
+    background-color: transparent;
+  }
+
+  &:hover {
+    background-color: $coloron-primary-hight;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &_orange {
+    border: unset;
+    border-radius: 5px;
+    background-color: $coloron-primary-hight;
+
+    &:hover {
+      background-color: $coloron-primary-low;
+    }
+  }
+  &_center {
+    margin: 40px auto 0;
+    @include for-tablet-landscape-up {
+      width: 100%;
+    }
+  }
+}

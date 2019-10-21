@@ -1,0 +1,121 @@
+.tabs-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 340px;
+  font-family: "Open Sans";
+  @include for-tablet-portrait-up {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+}
+
+  &_left {
+    width: 476px;
+    padding: 10px 0 0 100px;
+    @include for-tablet-landscape-up {
+      padding: 10px 0 0 50px;
+    }
+  }
+
+  &_right {
+    padding-left: 160px;
+    @include for-tablet-landscape-up {
+      padding-left: 50px;
+    }
+  }
+
+  &__item {
+    display: block;
+    margin-bottom: 2px;
+    background-color: $coloron-primary-low;
+    width: 110px;
+    line-height: 110px;
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-transition: all, 0.3s;
+    transition: all, 0.3s;
+    border: none;
+    cursor: pointer;
+    color: $white;
+    @include for-tablet-portrait-up {
+      margin: 0 2px;
+      width: 200px;
+      line-height: 50px;
+    }
+
+    &_top {
+      border-radius: 3px 3px 0 0;
+      @include for-tablet-portrait-up {
+        border-radius: unset;
+      }
+    }
+
+    &_bottom {
+      border-radius: 0 0 3px 3px;
+      @include for-tablet-portrait-up {
+        border-radius: unset;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+      background: hsl(0, 0%, 30%);
+    }
+  }
+
+  &__articles {
+    @include for-tablet-portrait-up {
+      padding-top: 20px;
+    }
+  }
+
+  &__articles > article {
+    display: none;
+    padding-top: 8px;
+  }
+  &__text {
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+input[type="radio"] {
+  display: none;
+
+  &:checked+label {
+    background-color: $coloron-primary-hight;
+  }
+}
+
+#tab1:checked~.content #content1,
+#tab2:checked~.content #content2,
+#tab3:checked~.content #content3,
+#tab4:checked~.content #content4 {
+  display: flex;
+  opacity: 1;
+  -webkit-animation: tabs-changing-up 2s;
+  animation: tabs-changing-up 2s;
+}
+
+@-webkit-keyframes tabs-changing-up {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes tabs-changing-up {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

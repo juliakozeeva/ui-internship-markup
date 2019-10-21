@@ -1,0 +1,14 @@
+.section-container {
+  &_flex{
+    @include flex;
+    @include for-tablet-portrait-up {
+      flex-direction: column;
+    }
+  }
+  &_flexin {
+    @include flexin(space-between);
+    @include for-tablet-portrait-up {
+      flex-direction: column;
+    }
+  }
+}

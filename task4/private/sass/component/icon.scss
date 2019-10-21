@@ -1,0 +1,28 @@
+.icon {
+  display: inline-block;
+  margin-left: 40px;
+  font-size: 48px;
+  color: $color-icon-fill;
+  transition: all .2s ease-in-out;
+  @include for-tablet-landscape-up {
+    font-size: 36px;
+  }
+
+  &_small {
+    font-size: 23px;
+    margin-left: 20px;
+  }
+
+  &_primary-color {
+    font-size: 32px;
+    color: $coloron-primary-hight;
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:hover {
+    color: $coloron-primary-hight;
+  }
+}

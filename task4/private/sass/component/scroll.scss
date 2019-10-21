@@ -1,0 +1,23 @@
+.scroll {
+  @include icon-border (6px, 50px, 50px, 3px, solid, $coloron-primary-hight);
+  z-index: 7;
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  display: none;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+
+  &__top {
+    width: 50%;
+    margin: auto;
+    border: 9px solid transparent;
+    border-bottom: 11px solid $coloron-primary-hight;
+    transition: all .2s ease-in-out;
+
+  }
+
+  &:hover {
+    border-color: $coloron-primary-low;
+  }
+}
