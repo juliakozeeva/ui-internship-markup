@@ -1,26 +1,33 @@
 .section-group {
   padding-top: 40px;
+
   &__item {
-      @include flexin(space-between);
-      margin-bottom: 40px;
-      &:last-child {
-        margin-bottom: 0;
-      }
-      @include for-tablet-portrait-up {
-        justify-content: left;
-      }
+    @include flexin(space-between);
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include for-tablet-portrait-up {
+      justify-content: left;
+    }
   }
+
   &__link {
     display: block;
     margin-top: 5px;
     @include icon-border (9px, 40px, 40px, 2px, solid, $coloron-primary-hight);
+
     .icon-load {
       color: $coloron-primary-hight;
     }
   }
+
   &__content {
     width: 360px;
-    @include for-tablet-portrait-up {
+
+    @include for-tablet-intermediate {
       width: 100%;
       padding-left: 20px;
     }

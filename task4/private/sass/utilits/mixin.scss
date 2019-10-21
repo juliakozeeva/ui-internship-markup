@@ -5,8 +5,7 @@
   font-weight: $font-weight;
 }
 
-$OpenSansSemibold: 'Open Sans',
-sans-serif;
+$OpenSansSemibold: 'Open Sans', sans-serif;
 
 @mixin flex {
   display: flex;
@@ -40,6 +39,12 @@ sans-serif;
 
 @mixin for-tablet-landscape-up {
   @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-intermediate {
+  @media (max-width: 1080px) {
     @content;
   }
 }

@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 .body-page {
   height: 100%;
@@ -25,9 +29,7 @@ html,
 
   @include for-tablet-landscape-up {
     width: 100%;
-    padding: 0 30px;
+    padding: 0 60px;
     margin: 0;
   }
-
-  ;
 }

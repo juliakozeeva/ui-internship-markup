@@ -13,11 +13,6 @@ window.addEventListener('wheel', scrollBlock);
 
 const scrollTopUp = function scrollTopUp() {
   const top = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
-  if (top > 0) {
-    window.scrollBy(0, -10);
-    setTimeout(scrollTopUp, 1);
-  } else {
-    return false;
-  }
+  window.scrollBy(0, -top);
 };
 scroll.addEventListener('click', scrollTopUp);

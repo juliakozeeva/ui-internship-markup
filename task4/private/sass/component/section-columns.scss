@@ -10,13 +10,15 @@
     max-width: 350px;
     width: 100%;
     text-align: center;
+
     @include for-tablet-landscape-up {
-      max-width: 300px;
+      max-width: unset;
+      width: 32%;
     }
-    @include for-tablet-portrait-up {
-      max-width: 220px;
-    }
+
     &_shadow {
+      text-decoration: none;
+
       &:hover {
         cursor: pointer;
         box-shadow: 0 1px 13px rgba(0, 0, 0, 0.38);

@@ -27,8 +27,10 @@
       background-color: $coloron-primary-low;
     }
   }
+
   &_center {
     margin: 40px auto 0;
+
     @include for-tablet-landscape-up {
       width: 100%;
     }

@@ -4,23 +4,30 @@
   flex-wrap: wrap;
   height: 340px;
   font-family: "Open Sans";
-  @include for-tablet-portrait-up {
+
+  @include for-tablet-intermediate {
     display: flex;
     flex-direction: row;
     justify-content: center;
     height: auto;
-}
+  }
 
   &_left {
     width: 476px;
     padding: 10px 0 0 100px;
+
     @include for-tablet-landscape-up {
       padding: 10px 0 0 50px;
+    }
+
+    @include for-tablet-intermediate {
+      padding: 0;
     }
   }
 
   &_right {
     padding-left: 160px;
+
     @include for-tablet-landscape-up {
       padding-left: 50px;
     }
@@ -37,24 +44,32 @@
     -webkit-transition: all, 0.3s;
     transition: all, 0.3s;
     border: none;
+    outline: none;
     cursor: pointer;
     color: $white;
-    @include for-tablet-portrait-up {
-      margin: 0 2px;
-      width: 200px;
+
+    @include for-tablet-intermediate {
+      margin-right: 2px;
+      width: 33%;
       line-height: 50px;
+
+      &_last-child {
+        margin-right: 0;
+      }
     }
 
     &_top {
       border-radius: 3px 3px 0 0;
-      @include for-tablet-portrait-up {
+
+      @include for-tablet-intermediate {
         border-radius: unset;
       }
     }
 
     &_bottom {
       border-radius: 0 0 3px 3px;
-      @include for-tablet-portrait-up {
+
+      @include for-tablet-intermediate {
         border-radius: unset;
       }
     }
@@ -66,17 +81,19 @@
   }
 
   &__articles {
-    @include for-tablet-portrait-up {
+    @include for-tablet-intermediate {
       padding-top: 20px;
+      width: 100%;
     }
   }
 
-  &__articles > article {
+  &__articles>article {
     display: none;
     padding-top: 8px;
   }
+
   &__text {
-    display: flex ;
+    display: flex;
     justify-content: space-between;
     align-items: center;
   }
@@ -89,6 +106,7 @@ input[type="radio"] {
     background-color: $coloron-primary-hight;
   }
 }
+
 
 #tab1:checked~.content #content1,
 #tab2:checked~.content #content2,

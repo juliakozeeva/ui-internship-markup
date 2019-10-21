@@ -1,35 +1,41 @@
 .nav {
   padding: 20px 0;
   background-color: $black;
+
   &__container {
     @include flex;
   }
+
   &__logo {
-    @include fonts($coloron-primary-hight,'Open Sans', 30px, 300);
+    @include fonts($coloron-primary-hight, 'Open Sans', 30px, 300);
     text-transform: uppercase;
     text-decoration: none;
   }
+
   &__accent {
     @include fonts($white, 30px);
     font-weight: 600;
   }
+
   &__list {
     @include flex;
     font-family: $OpenSansSemibold;
   }
+
   &__item {
     margin-right: 46px;
-    
+
     &:last-child {
       margin-right: 0;
     }
   }
+
   &__link {
     display: block;
     opacity: 0.69;
     color: $white;
     text-decoration: none;
-  
+
     &:hover {
       color: $coloron-primary-hight;
     }

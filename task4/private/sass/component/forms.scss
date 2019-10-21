@@ -1,4 +1,5 @@
 .form {
+
   &__text,
   &__email,
   &__password,
@@ -11,6 +12,7 @@
     outline: none;
     @include fonts($black, "Open Sans", 14px, 400);
   }
+
   &__message {
     width: 520px;
     height: 186px;
@@ -21,13 +23,14 @@
     resize: none;
     transition: all .2s ease-in-out;
     @include fonts($black, "Open Sans", 14px, 400);
+
     @include for-tablet-landscape-up {
       padding: 8px 16px;
       margin-top: 36px;
       width: 100%;
       height: auto;
     }
-  
+
     &:focus::placeholder {
       position: relative;
       top: -12px;
@@ -39,7 +42,7 @@
 }
 
 .form__password:invalid:focus:not(:placeholder-shown) {
-  & ~ .requirements {
+  &~.requirements {
     max-height: 200px;
     padding: 20px;
   }
@@ -57,9 +60,11 @@
 .form-signup {
   width: 360px;
   background-color: $white;
+
   @include for-tablet-portrait-up {
     width: 100%;
   }
+
   &__title {
     margin: unset;
     padding: 20px 0;
@@ -67,15 +72,18 @@
     @include fonts($coloron-primary-low, "Open Sans", 20px, 700);
     text-align: center;
   }
+
   &__accent {
     display: inline-block;
     padding: 0 3px;
     @include fonts($coloron-primary-hight, "Open Sans", 20px, 700);
     text-transform: uppercase;
   }
+
   &__content {
     padding: 0 38px;
   }
+
   &__button {
     width: 100%;
     background-color: $coloron-primary-hight;
@@ -84,11 +92,11 @@
     border: none;
     cursor: pointer;
     transition: all .2s ease-in-out;
-  
+
     &:hover {
       background-color: $color-btn-hover;
     }
-  
+
     &:active {
       transform: scale(0.99);
     }
@@ -136,9 +144,14 @@ input:focus::placeholder {
   flex-wrap: wrap;
   padding-top: 80px;
 
+  @include for-tablet-portrait-up {
+    padding-top: 20px;
+  }
+
   &__wrapper {
     @include flexin(space-between);
     align-items: flex-end;
+
     @include for-tablet-landscape-up {
       flex-direction: column;
     }
@@ -149,6 +162,7 @@ input:focus::placeholder {
     flex-direction: column;
     max-width: 500px;
     width: 100%;
+
     @include for-tablet-landscape-up {
       width: 100%;
       max-width: unset;
