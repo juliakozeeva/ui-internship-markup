@@ -67,3 +67,5 @@ node_modules/
 .DS_Store
 
 task2/public/style/css/*
+task4/public/style/css/*
+task4/public/storage/*

@@ -1,0 +1,78 @@
+.section-columns {
+  @include flex;
+  padding-top: 80px;
+
+  &_to-bottom {
+    @include flexin(space-between, flex-end);
+  }
+
+  &__item {
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+
+    @include for-tablet-landscape-up {
+      max-width: unset;
+      width: 32%;
+    }
+
+    &_shadow {
+      text-decoration: none;
+
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0 1px 13px rgba(0, 0, 0, 0.38);
+      }
+    }
+  }
+
+  &__icon {
+    @include icon-border (15px, 70px, 70px, 3px, solid, $coloron-primary-hight);
+    margin: auto;
+    margin-bottom: 29px;
+  }
+
+  &__part {
+    margin: 0;
+    margin-bottom: 1px;
+
+    &_smaller {
+      font-size: 35px;
+    }
+  }
+
+  &__part_black {
+    padding: 21px 0;
+    background-color: $coloron-primary-low;
+    @include fonts($white, "Open Sans", 20px, 600);
+    line-height: 24px;
+  }
+
+  &__part_number {
+    background-color: $coloron-primary-low;
+    @include fonts($white, Raleway, 94px, 700);
+  }
+
+  &__part_italic {
+    padding: 18px 0;
+    background-color: $coloron-primary-low;
+    @include fonts($color-primary-text, $OpenSansSemibold, 14px, 400);
+    font-style: italic;
+    line-height: 24px;
+  }
+
+  &__part_primary-color {
+    padding: 2px 0;
+    background-color: $coloron-primary-hight;
+    @include fonts($white, "Open Sans", 14px, 700);
+    line-height: 34px;
+    text-transform: uppercase;
+  }
+
+  &__part_light {
+    padding: 14px 0;
+    background-color: $white;
+    @include fonts($color-primary-text, "Open Sans", 14px, 400);
+    text-transform: uppercase;
+  }
+}

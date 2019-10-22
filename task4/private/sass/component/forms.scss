@@ -1,0 +1,171 @@
+.form {
+
+  &__text,
+  &__email,
+  &__password,
+  &__subject {
+    width: 100%;
+    padding: 8px 16px;
+    margin-top: 36px;
+    border: none;
+    border-bottom: 1px solid $color-form-border;
+    outline: none;
+    @include fonts($black, "Open Sans", 14px, 400);
+  }
+
+  &__message {
+    width: 520px;
+    height: 186px;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid $color-form-border;
+    outline: none;
+    resize: none;
+    transition: all .2s ease-in-out;
+    @include fonts($black, "Open Sans", 14px, 400);
+
+    @include for-tablet-landscape-up {
+      padding: 8px 16px;
+      margin-top: 36px;
+      width: 100%;
+      height: 90px;
+    }
+
+    &:focus::placeholder {
+      position: relative;
+      top: -12px;
+      vertical-align: super;
+      font-size: 10px;
+      transition: all .2s ease-in-out;
+    }
+  }
+}
+
+.form__password:invalid:focus:not(:placeholder-shown) {
+  &~.requirements {
+    max-height: 200px;
+    padding: 20px;
+  }
+}
+
+.requirements {
+  @include fonts($coloron-primary-hight, "Open Sans", 14px, 400);
+  max-height: 0;
+  transition: 0.28s;
+  overflow: hidden;
+  font-style: italic;
+}
+
+
+.form-signup {
+  width: 360px;
+  background-color: $white;
+
+  @include for-tablet-portrait-up {
+    width: 100%;
+  }
+
+  &__title {
+    margin: unset;
+    padding: 20px 0;
+    background-color: $color-primary;
+    @include fonts($coloron-primary-low, "Open Sans", 20px, 700);
+    text-align: center;
+  }
+
+  &__accent {
+    display: inline-block;
+    padding: 0 3px;
+    @include fonts($coloron-primary-hight, "Open Sans", 20px, 700);
+    text-transform: uppercase;
+  }
+
+  &__content {
+    padding: 0 38px;
+  }
+
+  &__button {
+    width: 100%;
+    background-color: $coloron-primary-hight;
+    margin: 50px 0 0 0;
+    padding: 20px 0;
+    border: none;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      background-color: $color-btn-hover;
+    }
+
+    &:active {
+      transform: scale(0.99);
+    }
+  }
+}
+
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  @include fonts($color-form-placeholder, "Open Sans", 14px, 400);
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  @include fonts($color-form-placeholder, "Open Sans", 14px, 400);
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  @include fonts($color-form-placeholder, "Open Sans", 14px, 400);
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  @include fonts($color-form-placeholder, "Open Sans", 14px, 400);
+}
+
+
+input[type="submit"] {
+  @include fonts($white, $OpenSansSemibold, 15px, 400);
+}
+
+input:focus::placeholder {
+  position: relative;
+  top: -14px;
+  vertical-align: super;
+  font-size: 10px;
+  transition: all .2s ease-in-out;
+}
+
+.contact-form {
+  @include flexin(space-between);
+  flex-direction: column;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding-top: 80px;
+
+  @include for-tablet-portrait-up {
+    padding-top: 20px;
+  }
+
+  &__wrapper {
+    @include flexin(space-between);
+    align-items: flex-end;
+
+    @include for-tablet-landscape-up {
+      flex-direction: column;
+    }
+  }
+
+  &__input {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    width: 100%;
+
+    @include for-tablet-landscape-up {
+      width: 100%;
+      max-width: unset;
+    }
+  }
+}

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task 4</title>
+  <link rel="stylesheet" href="style/css/main.css">
+  <script src="https://kit.fontawesome.com/cab9c72d0a.js" crossorigin="anonymous"></script>
+</head>
+<body class="body-page">
+  <div class="scroll">
+    <div class="scroll__top"></div>
+  </div>
+  <div class="wrapper">
+    <header class="header">
+      <nav class="nav">
+        <div class="nav__container container">
+          <a href="#" class="nav__logo">
+            <span class="nav__accent">ax</span>it
+          </a>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#features" class="nav__link">Features</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#pricing" class="nav__link">Pricing</a>
+            </li>
+            <li class="nav__item">
+              <a href="#reviews" class="nav__link">Reviews</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="header__container container">
+        <section class="header__content">
+          <h1 class="header__logo">
+            <span class="header__accent">ax</span>it
+          </h1>
+          <h2 class="header__title">modern axure template for beautiful prototypes</h2>
+          <p class="header__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+            accumsan et viverra justo commodo.
+          </p>
+          <a class="header__button button button_transparent" href="storage/modulepatterns.pdf"
+            download="modulepatterns.pdf" target="_blank">Download</a>
+        </section>
+        <form class="form form-signup" action="#" method="POST">
+          <h3 class="form-signup__title">Try Your<span class="form-signup__accent"> Free </span>Trial Today</h3>
+          <div class="form-signup__content">
+            <input class="form__text" type="text" name="name" placeholder="Name" pattern="[A-Za-z]{2,}" required>
+            <input class="form__email" type="email" name="email" placeholder="Email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+            <input class="form__password" type="password" name="password" placeholder="Password"
+              pattern="(?=^.{6,}$)((?!.*\s)(?=.*[A-Z])(?=.*[a-z]))(?=(1)(?=.*\d)|.*[^A-Za-z0-9])^.*$" required>
+            <div class="requirements">
+              Your password must be min 6 characters, required: 1 capital letter, 1 lower-case letter, 1 digit, 1
+              special character.
+            </div>
+          </div>
+          <input class="form-signup__button" type="submit" value="Get Started">
+        </form>
+      </div>
+    </header>
+    <main>
+      <section id="features" class="section section_small">
+        <div class="section-container_flex container">
+          <div class="section__left">
+            <h3 class="section__title section__title_no-indent">Social Media</h3>
+            <p class="section__text section__text_left">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit suscipit
+              praesentium quaerat.</p>
+          </div>
+          <div class="section__icon-list">
+            <a href="#" class="icon"><i class="fab fa-facebook-f icon_facebook"></i></a>
+            <a href="#" class="icon"><i class="fab fa-twitter icon_twitter"></i></a>
+            <a href="#" class="icon"><i class="fab fa-google-plus-g icon_google"></i></a>
+            <a href="#" class="icon"><i class="fab fa-pinterest icon_pinterest"></i></a>
+            <a href="#" class="icon"><i class="fab fa-instagram icon_instagram"></i></a>
+            <a href="#" class="icon"><i class="fab fa-stumbleupon icon_stumbleupon"></i></a>
+            <a href="#" class="icon"><i class="fas fa-rss icon_rss"></i></a>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="section-container_flexin container">
+          <div class="tabs-content">
+            <input tabindex="0" id="tab1" type="radio" name="tabs" checked>
+            <label tabindex="0" for="tab1" class="tabs-content__item tabs-content__item_top">TAB 1</label>
+            <input tabindex="0" id="tab2" type="radio" name="tabs">
+            <label tabindex="0" for="tab2" class="tabs-content__item">TAB 2</label>
+            <input id="tab3" type="radio" name="tabs">
+            <label tabindex="0" for="tab3"
+              class="tabs-content__item tabs-content__item_bottom tabs-content__item_last-child">TAB 3</label>
+            <div class="tabs-content__articles content">
+              <article id="content1" class="tabs-content__text tabs-content__text-1">
+                <div class="tabs-content_left">
+                  <h3 class="section__title">Tabs with soft transitioning effect.</h3>
+                  <p class="section__text section__text_left section__text_paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores blanditiis illo quo nemo laborum
+                    nobis
+                    dolor
+                    deserunt architecto
+                    aperiam possimus vel excepturi est assumenda consequuntur minus ipsa sunt, incidunt hic optio.
+                    Consequuntur
+                    repudiandae
+                    corrupti in molestias!
+                  </p>
+                  <p class="section__text section__text_left section__text_paragraph">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae molestiae quia ex!
+                  </p>
+                  <a class="button button_orange" href="storage/modulepatterns.pdf"
+                    download="modulepatterns.pdf" target="_blank">Download</a>
+                </div>
+                <div class="tabs-content_right">
+                  <picture class="picture">
+                    <img src="assets/town.png" alt="town" class="picture__content">
+                  </picture>
+                </div>
+              </article>
+              <article id="content2" class="tabs-content__text tabs-content__text-2">
+                <div class="tabs-content_left">
+                  <h3 class="section__title">OH MY GOSH!! IT'S CHANGING!!!</h3>
+                  <p class="section__text section__text_left section__text_paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores blanditiis illo quo nemo laborum
+                    nobis
+                    dolor
+                    deserunt architecto
+                    aperiam possimus vel excepturi est assumenda consequuntur minus ipsa sunt, incidunt hic optio.
+                    Consequuntur
+                    repudiandae
+                    corrupti in molestias!
+                  </p>
+                  <p class="section__text section__text_left section__text_paragraph">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae molestiae quia ex!
+                  </p>
+                  <a class="button button_orange" href="storage/modulepatterns.pdf"
+                    download="modulepatterns.pdf" target="_blank">Download</a>
+                </div>
+                <div class="tabs-content_right">
+                  <picture class="picture">
+                    <img src="assets/town.png" alt="town" class="picture__content">
+                  </picture>
+                </div>
+              </article>
+              <article id="content3" class="tabs-content__text tabs-content__text-3">
+                <div class="tabs-content_left">
+                  <h3 class="section__title">AND ONCE AGAIN!!</h3>
+                  <p class="section__text section__text_left section__text_paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores blanditiis illo quo nemo laborum
+                    nobis
+                    dolor
+                    deserunt architecto
+                    aperiam possimus vel excepturi est assumenda consequuntur minus ipsa sunt, incidunt hic optio.
+                    Consequuntur
+                    repudiandae
+                    corrupti in molestias!
+                  </p>
+                  <p class="section__text section__text_left section__text_paragraph">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae molestiae quia ex!
+                  </p>
+                </div>
+                <div class="tabs-content_right">
+                  <picture class="picture">
+                    <img src="assets/town.png" alt="town" class="picture__content">
+                  </picture>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section_white">
+        <div class="section-container_flexin container">
+          <picture class="picture">
+            <img src="assets/landscape.png" alt="town" class="picture__content">
+          </picture>
+          <article class="section__right">
+            <h3 class="section__title section__title_no-indent section__title_underline-left">Sub list section</h3>
+            <p class="section__text section__text_left">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id repellendus dolorum aliquam sapiente beatae
+              ratione et. Quaerat
+              magnam veritatis optio, eos eius dolore.
+            </p>
+            <div class="section-group">
+              <div class="section-group__item">
+                <div class="section-group__link">
+                  <i class="fas fa-cloud-upload-alt icon-load"></i>
+                </div>
+                <section class="section-group__content">
+                  <h4 class="section__title section__title_small section__title_no-indent">Title</h4>
+                  <p class="section__text section__text_left">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sint
+                    qui ratione
+                    vitae!</p>
+                </section>
+              </div>
+              <div class="section-group__item">
+                <div class="section-group__link">
+                  <i class="fas fa-cloud-download-alt icon-load"></i>
+                </div>
+                <section class="section-group__content">
+                  <h4 class="section__title section__title_small section__title_no-indent">Title</h4>
+                  <p class="section__text section__text_left">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nesciunt cum
+                    consectetur vero autem quisquam ratione
+                    doloremque, provident architecto, placeat, aliquam totam magni nemo!</p>
+                </section>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="section">
+        <div class="section-container_flexin container">
+          <article class="section__left">
+            <h3 class="section__title section__title_no-indent section__title_underline-left">Standart Picture Section
+            </h3>
+            <p class="section__text section__text_left section__text_paragraph">Lorem ipsum dolor sit, amet consectetur
+              adipisicing elit. Explicabo ab doloribus
+              ipsum, incidunt eum sunt perferendis odit tenetur quia dicta, a, sint ex. Asperiores sapiente illo quas
+              nam
+              sequi ut laudantium quaerat! Asperiores optio quam adipisci?</p>
+            <p class="section__text section__text_left">Lorem ipsum dolor sit amet consectetur adipisicing elit. In,
+              iure
+              at?</p>
+          </article>
+          <picture class="picture">
+            <img src="assets/town-ny.png" alt="town" class="picture__content">
+          </picture>
+        </div>
+      </section>
+      <section id="about" class="section section_white">
+        <div class="container">
+          <h2 class="section__title_uppercase section__title_underline-center">why this is awesome</h2>
+          <p class="section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="section-columns">
+            <article class="section-columns__item">
+              <div class="section-columns__icon">
+                <i class="far fa-lightbulb icon_primary-color icon-lightbulb"></i>
+              </div>
+              <h3 class="section__title section__title_center section__title_no-indent">Thoughtful Design</h3>
+              <p class="section__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni doloremque autem
+                tempore officiis soluta explicabo
+                laborum. Esse dolorem saepe perspiciatis enim?</p>
+            </article>
+            <article class="section-columns__item">
+              <div class="section-columns__icon">
+                <i class="far fa-keyboard icon-keyboard icon_primary-color"></i>
+              </div>
+              <h3 class="section__title section__title_center section__title_no-indent">Thoughtful Design</h3>
+              <p class="section__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni doloremque autem
+                tempore officiis soluta explicabo
+                laborum. Esse dolorem saepe perspiciatis enim?</p>
+            </article>
+            <article class="section-columns__item">
+              <div class="section-columns__icon">
+                <i class="fas fa-bolt icon-bolt icon_primary-color"></i>
+              </div>
+              <h3 class="section__title section__title_center section__title_no-indent">Thoughtful Design</h3>
+              <p class="section__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni doloremque autem
+                tempore officiis soluta explicabo
+                laborum. Esse dolorem saepe perspiciatis enim?</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="pricing" class="section">
+        <div class="container">
+          <h2 class="section__title_uppercase section__title_underline-center">pricing options</h2>
+          <p class="section__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <div class="section-columns section-columns_to-bottom">
+            <a class="section-columns__item section-columns__item_shadow" href="#">
+              <p class="section-columns__part section-columns__part_black">Basis</p>
+              <p class="section-columns__part section-columns__part_number"><span
+                  class="section-columns__part_smaller">$</span>0</p>
+              <p class="section-columns__part section-columns__part_italic">Free for Life</p>
+              <div class="section-columns__part section-columns__part_primary-color"></div>
+              <p class="section-columns__part section-columns__part_light">1 gb of space</p>
+              <p class="section-columns__part section-columns__part_light">10 gb of bandwidth</p>
+              <p class="section-columns__part section-columns__part_light">3 websites</p>
+              <p class="section-columns__part section-columns__part_light">basis customization</p>
+              <p class="section-columns__part section-columns__part_light">wordpress integration</p>
+              <p class="section-columns__part section-columns__part_light">email support</p>
+            </a>
+            <a class="section-columns__item section-columns__item_shadow" href="#">
+              <p class="section-columns__part section-columns__part_black">Professional</p>
+              <p class="section-columns__part section-columns__part_number"><span
+                  class="section-columns__part_smaller">$</span>19</p>
+              <p class="section-columns__part section-columns__part_italic">Monthly Payment</p>
+              <div class="section-columns__part section-columns__part_primary-color">Our most popular</div>
+              <p class="section-columns__part section-columns__part_light">5 gb of space</p>
+              <p class="section-columns__part section-columns__part_light">50 gb of bandwidth</p>
+              <p class="section-columns__part section-columns__part_light">12 websites</p>
+              <p class="section-columns__part section-columns__part_light">advanced customization</p>
+              <p class="section-columns__part section-columns__part_light">wordpress integration</p>
+              <p class="section-columns__part section-columns__part_light">email support</p>
+            </a>
+            <a class="section-columns__item section-columns__item_shadow" href="#">
+              <p class="section-columns__part section-columns__part_black">Enterprice</p>
+              <p class="section-columns__part section-columns__part_number"><span
+                  class="section-columns__part_smaller">$</span>70</p>
+              <p class="section-columns__part section-columns__part_italic">Monthly Payment</p>
+              <div class="section-columns__part section-columns__part_primary-color"></div>
+              <p class="section-columns__part section-columns__part_light">unlimited space</p>
+              <p class="section-columns__part section-columns__part_light">unlimited bandwidth</p>
+              <p class="section-columns__part section-columns__part_light">100 websites</p>
+              <p class="section-columns__part section-columns__part_light">advanced customization</p>
+              <p class="section-columns__part section-columns__part_light">wordpress integration</p>
+              <p class="section-columns__part section-columns__part_light">24/7 customer support</p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="reviews" class="section section_white">
+        <div class="container">
+          <h2 class="section__title_uppercase section__title_underline-center">what our customers are saying</h2>
+          <p class="section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="section-columns">
+            <div class="section-columns__item">
+              <p class="section__text section__text_left section__text_quote">Lorem ipsum dolor sit, amet consectetur
+                adipisicing
+                elit. Eos aut quod tempore quia praesentium error in voluptatum
+                temporibus magni libero?</p>
+              <div class="client-card">
+                <picture class="picture">
+                  <img src="assets/avatar.png" alt="avatar" class="client-card__avatar picture__content">
+                </picture>
+                <div class="client-card__signature">
+                  <h3 class="client-card__caption">Jeremy H.</h3>
+                  <p class="client-card__position">Manager</p>
+                </div>
+              </div>
+            </div>
+            <div class="section-columns__item">
+              <p class="section__text section__text_left section__text_quote">Lorem ipsum dolor sit, amet consectetur
+                adipisicing
+                elit. Eos aut quod tempore quia praesentium error in voluptatum
+                temporibus magni libero?</p>
+              <div class="client-card">
+                <picture class="picture">
+                  <img src="assets/avatar.png" alt="avatar" class="client-card__avatar picture__content">
+                </picture>
+                <div class="client-card__signature">
+                  <h3 class="client-card__caption">John S.</h3>
+                  <p class="client-card__position">Freelancer</p>
+                </div>
+              </div>
+            </div>
+            <div class="section-columns__item">
+              <p class="section__text section__text_left section__text_quote">Lorem ipsum dolor sit, amet consectetur
+                adipisicing
+                elit. Eos aut quod tempore quia praesentium error in voluptatum
+                temporibus magni libero?</p>
+              <div class="client-card">
+                <picture class="picture">
+                  <img src="assets/avatar.png" alt="avatar" class="client-card__avatar picture__content">
+                </picture>
+                <div class="client-card__signature">
+                  <h3 class="client-card__caption">Susan W.</h3>
+                  <p class="client-card__position">Photographer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section_background-img">
+        <div class="container">
+          <h2 class="section__title_uppercase section__title_underline-light section__title_light">stylish axure design
+          </h2>
+          <p class="section__text section__text_light section__text_paragraph ">Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Perspiciatis mollitia
+            sapiente aut reiciendis modi eveniet dolorem.</p>
+          <a class="button button_transparent" href="storage/modulepatterns.pdf"
+            download="modulepatterns.pdf" target="_blank">Download</a>
+        </div>
+      </section>
+      <section id="contact" class="section section_white">
+        <div class="container">
+          <h2 class="section__title_uppercase section__title_underline-center">contact us</h2>
+          <p class="section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <form action="#" class="form contact-form" method="POST">
+            <div class="contact-form__wrapper">
+              <div class="contact-form__input">
+                <input type="text" name="name" class="form__text" placeholder="Name" pattern="[A-Za-z]{2,}" required>
+                <input type="email" name="email" class="form__email" placeholder="Email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                <input type="text" name="subject" class="form__subject" placeholder="Subject" required>
+              </div>
+              <div class="contact-form__input">
+                <textarea class="form__message" name="message" placeholder="Message" minlength="1" maxlength="250"
+                  required></textarea>
+              </div>
+            </div>
+            <button type="submit" class="button button_orange button_center">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__icon-list icon-list">
+        <a href="#" class="icon icon_small"><i class="fab fa-facebook-f icon_facebook"></i></a>
+        <a href="#" class="icon icon_small"><i class="fab fa-twitter icon_twitter"></i></a>
+        <a href="#" class="icon icon_small"><i class="fab fa-google-plus-g icon_google"></i></a>
+        <a href="#" class="icon icon_small"><i class="fab fa-pinterest icon_pinterest"></i></a>
+        <a href="#" class="icon icon_small"><i class="fab fa-instagram icon_instagram"></i></a>
+        <a href="#" class="icon icon_small"><i class="fab fa-stumbleupon icon_stumbleupon"></i></a>
+        <a href="#" class="icon icon_small"><i class="fas fa-rss icon_rss"></i></a>
+      </div>
+      <p class="footer__text">&copy; 2015 Axure Themes</p>
+    </div>
+  </footer>
+  <script src="script/main.js"></script>
+</body>
+</html>
